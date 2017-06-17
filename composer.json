@@ -1,0 +1,33 @@
+{
+    "name": "craftvm/boilerplate",
+    "description": "Boilerplate DevOps Infrastructure for Craft CMS.",
+    "authors": [
+        { "name": "Branden Garrett", "email": "branden.garrett@gmail.com" }
+    ],
+    "keywords": [
+      "craftvm",
+      "craftcms",
+      "devops",
+      "boilerplate",
+      "starter",
+      "project"
+    ],
+    "homepage": "http://craftvm.com/",
+    "license": "MIT",
+    "type": "project",
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.1.0",
+        "craftcms/cms": "^3.0.0-beta.19",
+        "craftcms/plugin-installer": "^1.3",
+        "roave/security-advisories": "dev-master"
+    },
+    "require-dev": {
+        "bgrrtt/ansible-roles": "dev-master"
+    },
+    "repositories": [
+        { "type": "composer", "url": "https://asset-packagist.org" }
+    ],
+    "extra": {
+    }
+}

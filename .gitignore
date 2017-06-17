@@ -1,0 +1,24 @@
+# Default
+.DS_Store
+.git
+.idea
+.vagrant
+*.pyc
+*.retry
+
+# Node
+node_modules
+
+# Ansible
+secret_vars # ansible-vault is helpful if you're in a private repo.
+
+#Craft
+craft/config/license.key
+public/cpresources
+
+# Composer
+vendor/
+composer.lock
+
+# extra
+master.css
