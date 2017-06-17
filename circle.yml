@@ -1,0 +1,4 @@
+## Customize the test machine
+machine:
+  timezone:
+    America/Detroit # Set the timezone
