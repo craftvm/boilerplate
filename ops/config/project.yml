@@ -1,0 +1,35 @@
+---
+################################################################################
+#
+# CraftVM
+#
+################################################################################
+
+project_name: "CraftVM"
+project_code: "craftvm"
+
+################################################################################
+# Environments
+################################################################################
+
+# Local
+project_local_ip: "10.10.10.10"
+project_local_domain: "craftvm"
+project_local_tld: "dev"
+
+# Production
+project_produ_sub: "www"
+project_produ_domain: "craftvm"
+project_produ_tld: "com"
+
+################################################################################
+# System Architecture
+################################################################################
+
+project_web_server: "nginx"
+project_db_server: "mysql"
+
+project_craft_version: "3"
+project_ubuntu_version: "16.04"
+project_php_version: "7.1"
+project_db_server_version: "5.7"
