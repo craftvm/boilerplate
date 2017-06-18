@@ -4,14 +4,15 @@
 # CraftVM Boilerplate
 ### DevOps Infrastructure for Craft CMS.
 
-A project-based, host-agnostic, and version-controlled development environment that builds and operates production environments on AWS.
+A project-based, host-agnostic, and version-controlled development environment that also builds and operates production environments on AWS.
 
+<!--
 - Ubuntu 16.04 LTS
 - Nginx 1.12+
 - MySQL 5.7
 - PHP 7.1+
 - Node 6.x
-- Composer
+- Composer -->
 
 <!--
 - Git(HUB)
@@ -27,32 +28,29 @@ Visit the [wiki](https://github.com/craftvm/boilerplate/wiki) for more informati
 
 
 ## Installation
-### Prerequisites for Host Machine
+### Prerequisites ###
 
 - `brew install composer`
 - `brew cask install vagrant virtualbox`
 - `vagrant plugin install vagrant-hostsupdater vagrant-vbguest vagrant-bindfs`
 
 ### Project Boilerplate
-1. Create a new project with Composer.
-```
-composer create-project craftvm/boilerplate PROJECT -s dev && cd PROJECT
-```
-2. Change the remote origin to a private repository.
-```
-git remote set-url origin git@github.com:USERNAME/REPO.git
-```
-3. Configure ops/config/project.yml to reflect your needs.
+
+* Create a new project with Composer.
+      composer create-project craftvm/boilerplate PROJECT -s dev && cd PROJECT
+
+* Change the remote origin to a private repository.
+      git remote set-url origin git@github.com:USERNAME/REPO.git
+
+* Configure ops/config/project.yml to reflect your needs.
   - `project_local_ip: "10.10.10.10"`
   - `project_local_domain: "craftvm"`
-4. Up and Enter!
-```
-vagrant up && vagrant ssh
-```
+* Up and Enter!
+      vagrant up && vagrant ssh
 
-5. Visit [http://{project_local_domain}.dev/admin](http://craftvm.dev/install) to install Craft CMS.
+* Visit [http://{project_local_domain}.dev/admin](http://craftvm.dev/install) to install Craft CMS.
 
-6. Visit the [wiki](https://github.com/craftvm/boilerplate/wiki) to setup and deploy a production environment on AWS*.
+* Visit the [wiki](https://github.com/craftvm/boilerplate/wiki) to setup and deploy a production environment on AWS*.
 
 **\*DISCLAIMER**: It is your responsibility as a Developer, SysAdmin, or Cloud Architect to understand and use these tools safely and effectively. It is not the responsibility of, I or, any contributing developer to ensure your usage adheres to industry standards. As such, use this software AT YOUR OWN RISK.
 
