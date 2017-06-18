@@ -36,24 +36,33 @@ Visit the [wiki](https://github.com/craftvm/boilerplate/wiki) for more informati
 
 ### Project Boilerplate
 
-* Create a new project with Composer.
-      composer create-project craftvm/boilerplate PROJECT -s dev && cd PROJECT
+1. Create a new project with Composer.
+```
+composer create-project craftvm/boilerplate PROJECT -s dev && cd PROJECT
+```
 
-* Change the remote origin to a private repository.
-      git remote set-url origin git@github.com:USERNAME/REPO.git
+2. Change the remote origin to a private repository.
+```
+git remote set-url origin git@github.com:USERNAME/REPO.git
+```
 
-* Configure ops/config/project.yml to reflect your needs.
+3. Configure ops/config/project.yml to reflect your needs.
   - `project_local_ip: "10.10.10.10"`
   - `project_local_domain: "craftvm"`
-* Up and Enter!
-      vagrant up && vagrant ssh
 
-* Visit [http://{project_local_domain}.dev/admin](http://craftvm.dev/install) to install Craft CMS.
+4. Up and Enter!
+```
+vagrant up && vagrant ssh
+```
 
-* Visit the [wiki](https://github.com/craftvm/boilerplate/wiki) to setup and deploy a production environment on AWS*.
+5. Visit [http://{project_local_domain}.dev/admin](http://craftvm.dev/install) to install Craft CMS.
+
+6. Visit the [wiki](https://github.com/craftvm/boilerplate/wiki) to setup and deploy a production environment on AWS*.
 
 **\*DISCLAIMER**: It is your responsibility as a Developer, SysAdmin, or Cloud Architect to understand and use these tools safely and effectively. It is not the responsibility of, I or, any contributing developer to ensure your usage adheres to industry standards. As such, use this software AT YOUR OWN RISK.
 
 **\*NOTE**: If you feel comfortable with the development environment, but would like someone else to run your cloud operations, please [contact me](https://bgrrtt.com).
 
 ## Acknowledgments
+
+Thanks to [@pixelandtonic](https://github.com/pixelandtonic), [@khalwat](https://github.com/khalwat), and [@geerlingguy](https://github.com/geerlingguy) for their work and influence.
