@@ -10,7 +10,8 @@
 node_modules
 
 # Ansible
-secret_vars # ansible-vault is helpful if you're in a private repo.
+# remove once using a private git repo and ansible-vault on `secret_vars/**/*`.
+secret_vars
 
 #Craft
 craft/config/license.key
