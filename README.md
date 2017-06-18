@@ -1,10 +1,8 @@
 <!-- ![CraftVM Logo](https://raw.githubusercontent.com/craftvm/boilerplate/master/logo.jpg "Automation Eats the World.") -->
-
-# CraftVM Boilerplate
 [![CircleCI](https://circleci.com/gh/craftvm/boilerplate/tree/master.svg?style=shield&circle-token=f1de6e33a5bfe93a31e8915e9eb5ac9d32ec1416)](https://circleci.com/gh/craftvm/boilerplate/tree/master)
 [![Packagist](https://img.shields.io/packagist/dt/craftvm/boilerplate.svg)](https://packagist.org/packages/craftvm/boilerplate)
-
-#### DevOps Infrastructure for Craft CMS.
+# CraftVM Boilerplate
+### DevOps Infrastructure for Craft CMS.
 
 A project-based, host-agnostic, and version-controlled development environment that builds and operates production environments on AWS.
 
