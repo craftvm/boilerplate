@@ -1,0 +1,22 @@
+{% extends '_base' %}
+
+{% block content %}
+
+  <header class="site-header container">
+    <h1 class="site-header-title">
+      <a href="{{ siteUrl }}">{{ siteName }}</a>
+    </h1>
+  </header>
+  
+  <main class="page-main container">
+  {% block main %}
+    <p>If you see me, you haven’t set your <code>{% verbatim %}{% block main %}…{% endblock %}{% endverbatim %}</code> in this page's template yet.</p>
+    <p>See Twig’s <a href="http://twig.sensiolabs.org/doc/templates.html#template-inheritance">Template Inheritance</a> documentation for an explanation.</p>
+  {% endblock %}
+  </main>
+
+  <footer class="site-footer container">
+    <p class="copyright">&copy; {{ now|date('Y') }} {{ siteName }}</p>
+  </footer>
+
+{% endblock %}

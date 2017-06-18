@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  {% block meta %}
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  {% endblock %}
+
+  {% block seo %}
+    <title>CraftVM</title>
+  {% endblock %}
+
+  {% block favicon %}
+    <link rel="shortcut icon" href="{{ siteUrl }}assets/images/favicon.png" />
+  {% endblock %}
+
+  {% block style %}
+    <link rel="stylesheet" href="{{ siteUrl }}assets/css/master.min.css" />
+  {% endblock %}
+
+</head>
+
+<body>
+
+  {% block content %}
+    <p>If you see me, you haven’t set your <code>{% verbatim %}{% block content %}…{% endblock %}{% endverbatim %}</code> in templates/_layout yet.</p>
+    <p>See Twig’s <a href="http://twig.sensiolabs.org/doc/templates.html#template-inheritance">Template Inheritance</a> documentation for an explanation.</p>
+  {% endblock %}
+
+  {% block footerScripts %}
+    <script src="{{ siteUrl }}assets/js/bundle.min.js"></script>
+  {% endblock %}
+
+  {% block analytics %}
+  {% endblock %}
+
+</body>
+</html>
