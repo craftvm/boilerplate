@@ -25,36 +25,26 @@ A project-based, host-agnostic, and version-controlled development environment t
 
 Visit the [wiki](https://github.com/craftvm/boilerplate/wiki) for more information.
 
-#### Prerequisites for Host Machine
-- Composer
-- Vagrant 1.9+
-- VirtualBox
-- vagrant-hostsupdater
-- vagrant-vbguest
-- vagrant-bindfs
-
-`brew install composer`
-
-`brew cask install vagrant virtualbox`
-
-`vagrant plugin install vagrant-hostsupdater vagrant-vbguest vagrant-bindfs`
 
 ## Installation
+### Prerequisites for Host Machine
 
+- `brew install composer`
+- `brew cask install vagrant virtualbox`
+- `vagrant plugin install vagrant-hostsupdater vagrant-vbguest vagrant-bindfs`
+
+### Project Boilerplate
 1. Create a new project with Composer.
 ```
 composer create-project craftvm/boilerplate PROJECT -s dev && cd PROJECT
 ```
-
 2. Change the remote origin to a private repository.
 ```
 git remote set-url origin git@github.com:USERNAME/REPO.git
 ```
-
 3. Configure ops/config/project.yml to reflect your needs.
   - `project_local_ip: "10.10.10.10"`
   - `project_local_domain: "craftvm"`
-
 4. Up and Enter!
 ```
 vagrant up && vagrant ssh
