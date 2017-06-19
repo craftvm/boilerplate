@@ -14,11 +14,12 @@ node_modules
 secret_vars
 
 #Craft
+craft/app
 craft/config/license.key
 public/cpresources
 
 # Composer
-vendor/
+/vendor/
 composer.lock
 
 # extra
