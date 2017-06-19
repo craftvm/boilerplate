@@ -8,7 +8,7 @@
 
 return [
     // ------------------------------------------
-    'driver'   => 'mysql',
+    // 'driver'   => 'mysql',
     'server'   => getenv('CRAFT_ENV_DB_HOST'),
     'user'     => getenv('CRAFT_ENV_DB_USER'),
     'password' => getenv('CRAFT_ENV_DB_PASS'),
