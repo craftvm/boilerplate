@@ -38,7 +38,7 @@ Visit the [wiki](https://github.com/craftvm/boilerplate/wiki) for more informati
 
 1. Create a new project with Composer.
 ```
-composer create-project craftvm/boilerplate PROJECT -s dev && cd PROJECT
+composer create-project craftvm/boilerplate PROJECT && cd PROJECT
 ```
 
 2. Change the remote origin to a private repository.
@@ -55,7 +55,7 @@ git remote set-url origin git@github.com:USERNAME/REPO.git
 vagrant up && vagrant ssh
 ```
 
-5. Visit [http://{project_local_domain}.dev/admin](http://craftvm.dev/install) to install Craft CMS.
+5. Visit [http://{project_local_domain}.dev/admin](http://craftvm.dev/admin) to install Craft CMS.
 
 6. Visit the [wiki](https://github.com/craftvm/boilerplate/wiki) to setup and deploy a production environment on AWS*.
 
