@@ -2,6 +2,7 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 ################################################################################
+require './ops/roles/vagrant/plugins/install.rb'
 require './ops/roles/vagrant/plugins/yaml.rb'
 vconfig = load_config([
         './ops/config/project.yml',
